@@ -19,6 +19,8 @@ O backend vai estar disponível em `http://localhost:3333`.
 
 O frontend vai estar disponível em `http://localhost:3000`.
 
+---
+
 Para fazer o build do projeto, você pode usar o comando abaixo:
 
 **Atenção: É importante manter o backend rodando para que o build do frontend funcione.**
@@ -26,6 +28,8 @@ Para fazer o build do projeto, você pode usar o comando abaixo:
 ```bash
 bun run build
 ```
+
+---
 
 Depois de fazer o build, você pode iniciar o projeto com o comando abaixo:
 
@@ -37,11 +41,15 @@ O backend vai estar disponível em `http://localhost:3333`.
 
 O frontend vai estar disponível em `http://localhost:4173`.
 
+---
+
 Para fazer os testes no backend, você pode usar o comando:
 
 ```bash
 bun run test
 ```
+
+---
 
 Para verificar se o código está formatado corretamente, via biome, você pode usar o comando:
 
