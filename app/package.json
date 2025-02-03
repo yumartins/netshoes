@@ -1,0 +1,37 @@
+{
+  "name": "netshoes-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "build": "vite-ssg build",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "@nuxt/devalue": "^2.0.2",
+    "@unhead/vue": "^1.11.18",
+    "@vueuse/core": "^12.5.0",
+    "clsx": "^2.1.1",
+    "js-cookie": "^3.0.5",
+    "lucide-vue-next": "^0.474.0",
+    "pinia": "^2.3.1",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "vite-ssg": "^25.0.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.3",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^22.13.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vue-tsc": "^2.2.0"
+  }
+}

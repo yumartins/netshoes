@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@plugin 'tailwindcss-animate';
+
+@theme {
+	--color-primary-50: #f3e6ff;
+	--color-primary-100: #e5ccff;
+	--color-primary-200: #cc99ff;
+	--color-primary-300: #b366ff;
+	--color-primary-400: #9933ff;
+	--color-primary-500: #8200ff;
+	--color-primary-600: #6800cc;
+	--color-primary-700: #4e0099;
+	--color-primary-800: #340066;
+	--color-primary-900: #1a0033;
+
+	--font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo,
+		Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
+
+	button {
+		@apply cursor-pointer;
+	}
+}

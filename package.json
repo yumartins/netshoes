@@ -1,0 +1,24 @@
+{
+  "name": "netshoes",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"bun run dev:app\" \"bun run dev:server\"",
+    "test": "concurrently \"bun run test:server\"",
+    "start": "concurrently \"bun run start:app\" \"bun run start:server\"",
+    "build": "concurrently \"cd app && bun run build\" \"cd server && bun run build\"",
+    "dev:app": "cd app && bun run dev",
+    "lint:fix": "bunx biome check --write ./ && bunx biome format --write ./",
+    "start:app": "cd app && bun run start",
+    "lint:check": "bunx biome check ./",
+    "dev:server": "cd server && bun run dev",
+    "install:all": "concurrently \"cd app && bun install\" \"cd server && bun install\"",
+    "test:server": "cd server && bun run test",
+    "start:server": "cd server && bun run start"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": []
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noMisleadingCharacterClass": "warn"
+      },
+      "correctness": {
+        "noUnusedImports": "error"
+      },
+      "recommended": true
+    },
+    "enabled": true
+  },
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "tab"
+  },
+  "overrides": [
+    {
+      "include": [
+        "*.vue"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ],
+  "organizeImports": {
+    "enabled": true
+  }
+}
